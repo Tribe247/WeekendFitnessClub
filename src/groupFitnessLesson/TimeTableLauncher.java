@@ -13,7 +13,7 @@ public class TimeTableLauncher {
         System.out.println("Welcome to Group Fitness Lesson session schedule" +
                 "\n Please check our timetable to select your preferred training session and type" +
                 "\n Please note that we offer lesson on saturdays and sundays of every week, " +
-                "\n you can select your session by choosing any of the day or by selection the lesson type. Thank you \n");
+                "\n you can select your session by choosing any of the day or by selection the lesson type.\n");
 
         System.out.println("Check the time table for available lesson and periods" +
                 "\n To check the time table by days press 1" +
