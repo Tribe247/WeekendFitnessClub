@@ -16,8 +16,8 @@ public class TimeTableLauncher {
                 "\n you can select your session by choosing any of the day or by selection the lesson type.\n");
 
         System.out.println("Check the time table for available lesson and periods" +
-                "\n To check the time table by days press 1" +
-                "\n To check the time table by lesson type press 2");
+                "\n PRESS 1: Time table by days" +
+                "\n PRESS 2: Time table by lesson type");
 
         int timetableInput = welcomeIn.nextInt();
 

@@ -20,7 +20,7 @@ public class ReviewAttendData {
         HashMap<String, String> cusRecord = new HashMap<String, String>();
         //Set<Entry<String, String>> mappings = cusRecord.entrySet();
         cusRecord.put("Wale", "Yoga Evening Session 7th January\n");
-        //cusRecord.put("Dele"   , "Yoga Evening Session 7th January\n");
+        //cusRecord.put("Dele" , "Yoga Evening Session 7th January\n");
         cusRecord.put("Henry", "Yoga Evening Session 7th January\n");
         cusRecord.put("Queen", "Yoga Evening Session 7th January\n");
         cusRecord.put("Malik", "Yoga Evening Session 7th January\n");

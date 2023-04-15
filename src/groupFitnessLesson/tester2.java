@@ -23,5 +23,8 @@ public class tester2 {
 
         //ld.preferlesson();
         //ld.prefDay();
+
+
+
     }
 }
