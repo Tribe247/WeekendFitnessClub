@@ -66,7 +66,7 @@ public class SubLauncher {
                 break;
             case 5:
                 //A method to call general report
-                genR.allReport();
+
                 break;
             case 6:
                 System.exit(0);
