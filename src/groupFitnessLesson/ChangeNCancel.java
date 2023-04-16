@@ -70,7 +70,8 @@ public class ChangeNCancel {
 
                         break;
                     default:
-                        System.out.println("No booked session for the selected period");
+                        System.out.println("No booked session for the selected period \n");
+                        alt.AltOpt1();
                 }
             }
             catch (InputMismatchException e) {
@@ -119,7 +120,8 @@ public class ChangeNCancel {
 
                         break;
                     default:
-                        System.out.println("No booked session for the selected period");
+                        System.out.println("No booked session for the selected period \n");
+                        alt.AltOpt1();
                 }
             }
             catch (InputMismatchException e) {

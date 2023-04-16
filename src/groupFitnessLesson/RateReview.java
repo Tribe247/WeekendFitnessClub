@@ -143,15 +143,13 @@ public class RateReview {
                         break;
                     default:
                         System.out.println("No lesson available for the selected session");
+                        alt.AltOpt1();
                 }
             } catch (InputMismatchException e) {
                 System.out.println("This an invalid input ::: You will be redirected for other options \n \n \n ");
                 alt.AltOpt1();
             }
         }
-
-
-
 
 
         else if (revRatIn == 2 ) {
@@ -281,12 +279,18 @@ public class RateReview {
                         break;
                     default:
                         System.out.println("No lesson available for the selected session");
+                        alt.AltOpt1();
                 }
             } catch (InputMismatchException e) {
                 System.out.println("This an invalid input ::: You will be redirected for other options \n \n \n ");
                 alt.AltOpt1();
             }
         }
+        else{
+            System.out.println("Invalid input \n");
+            alt.AltOpt1();
+        }
+
 
             }
 

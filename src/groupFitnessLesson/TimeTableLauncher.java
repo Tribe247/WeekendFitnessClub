@@ -6,7 +6,11 @@ public class TimeTableLauncher {
 
     Scanner welcomeIn = new Scanner(System.in);
 
+    // Object of booking class
     Booking ld1 = new Booking();
+
+    // object of alternate option class
+    AlternateOptions alt = new AlternateOptions();
 
     public void timeTableWelcome(){
 
@@ -31,7 +35,8 @@ public class TimeTableLauncher {
             ld1.preferlesson();
         }
         else {
-            System.out.println("Wrong Input");
+            System.out.println("Wrong Input \n");
+            alt.AltOpt1();
         }
     }
 }

@@ -138,7 +138,8 @@ public class AttendLesson {
                     System.out.println("Friday110");
                     break;
                 default:
-                    System.out.println("No lesson available for the selected session");
+                    System.out.println("No lesson available for the selected session \n");
+                    alt.AltOpt1();
             }
         }
         catch (InputMismatchException e) {

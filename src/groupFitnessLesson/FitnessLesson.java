@@ -161,6 +161,22 @@ public class FitnessLesson {
         }
     }
 
+    public void lessonReportYoga7thJan(){
+        int NoOfCustomer = yoga7thJan.size();
+        String avRating = "Null";
+        System.out.println( "LESSON:YOGA     DATE:7TH   SESSION:MORNING \n" +
+                            "NUMBER OF CUSTOMER: " + NoOfCustomer +
+                            "AVERAGE RATING: " + avRating + "\n" );
+    }
+    public void champReportYoga7thJan(){
+        int NoOfCustomer = yoga7thJan.size();
+        double price = 27.00;
+        double totalIncome = NoOfCustomer * price;
+        System.out.println( "LESSON:YOGA     DATE:7TH   SESSION:MORNING \n" +
+                            "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
+                            "TOTAL INCOME: " + totalIncome + "\n");
+    }
+
     private HashMap<String, String> yoga14thJan = new HashMap<>();
 
     public void yoga14thJ(String name, String lesson) {
@@ -184,7 +200,6 @@ public class FitnessLesson {
             System.out.println("Session is filled up, Try another another session\n ");
         }
     }
-
 
     private HashMap<String, String> yoga21stJan = new HashMap<>();
 

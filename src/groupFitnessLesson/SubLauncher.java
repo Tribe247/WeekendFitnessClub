@@ -1,9 +1,9 @@
 package groupFitnessLesson;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SubLauncher {
-
 
     public void welcomePage() {
         System.out.println("Welcome to Group Fitness Lesson. You can Book a new lesson, attend a lesson," +
@@ -33,7 +33,10 @@ public class SubLauncher {
         RateReview rr = new RateReview();
 
         //Object of report class
-        GeneralReportToLaunch genR = new GeneralReportToLaunch();
+        LessonChampReport LCR = new LessonChampReport();
+
+        // Object for alternate option
+        AlternateOptions alt = new AlternateOptions();
 
 
 
@@ -45,34 +48,42 @@ public class SubLauncher {
                 "\n PRESS 5: Check monthly fitness and booking report " +
                 "\n PRESS 6: To EXIT");
 
-        int menu = Launcher1.nextInt();
-        switch (menu) {
-            case 1:
-                // Calling this method for booking
-                tb.timeTableWelcome();
-                break;
-            case 2:
-                // A method to call for Cancellation/ change will be called herr
-                nCa.changeBooking();
-                //chdt.zumba21st("Harry");
-                break;
-            case 3:
-                // A method called to initiate review/rating
-                at.attendL();
-                break;
-            case 4:
-                // A method called to initiate review/rating
-                rr.revRatWlc();
-                break;
-            case 5:
-                //A method to call general report
+        try {
+            int menu = Launcher1.nextInt();
+            switch (menu) {
+                case 1:
+                    // Calling this method for booking
+                    tb.timeTableWelcome();
+                    break;
+                case 2:
+                    // A method to call for Cancellation/ change will be called herr
+                    nCa.changeBooking();
+                    //chdt.zumba21st("Harry");
+                    break;
+                case 3:
+                    // A method called to initiate review/rating
+                    at.attendL();
+                    break;
+                case 4:
+                    // A method called to initiate review/rating
+                    rr.revRatWlc();
+                    break;
+                case 5:
+                    //A method to call general report
+                    LCR.reportLaunch();
+                    break;
+                case 6:
+                    System.out.println("Thank you for your time...");
 
-                break;
-            case 6:
-                System.exit(0);
-            default:
-                System.out.println("Invalid Entry");
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid Entry");
+                    alt.AltOpt1();
+            }
         }
-
+        catch (InputMismatchException e) {
+            System.out.println("This an invalid input ::: You will be redirected for other options \n \n \n ");
+            alt.AltOpt1();
+        }
     }
 }

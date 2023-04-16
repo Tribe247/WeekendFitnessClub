@@ -16,7 +16,7 @@ public class Booking {
     // An object of the Menu launcher classes is created
     SubLauncher sbl = new SubLauncher();
 
-    //Creating a method for my day lesson classes
+
     public void prefDay() {
 
         System.out.println("You have choose to view your time table by days" +
@@ -124,11 +124,13 @@ public class Booking {
                         break;
                     default:
                         System.out.println("No lesson available for the selected session");
+                        altB.AltOpt1();
+
                 }
             }
             catch (InputMismatchException e) {
                 System.out.println("This an invalid input ::: You will be redirected to main menu \n \n \n ");
-                sbl.welcomePage1();
+                altB.AltOpt1();
             }
 
 
@@ -205,15 +207,19 @@ public class Booking {
                             System.out.println("Friday11");
                             break;
                         default:
-                            System.out.println("No lesson available for the selected session");
+                            System.out.println("No lesson available for the selected session \n");
+
+                            altB.AltOpt1();
+
                     }
                 }
                 catch (InputMismatchException e) {
                     System.out.println("This an invalid input ::: You will be redirected to main menu \n \n \n ");
-                    sbl.welcomePage1();
+                    altB.AltOpt1();
                 }
         } else {
             System.out.println("Invalid Entry");
+            altB.AltOpt1();
         }
     }
 
@@ -348,11 +354,12 @@ public class Booking {
                         break;
                     default:
                         System.out.println("No lesson available for the selected session");
+                        altB.AltOpt1();
                 }
             }
             catch (InputMismatchException e) {
                 System.out.println("This an invalid input ::: You will be redirected to main menu \n \n \n ");
-                sbl.welcomePage1();
+                altB.AltOpt1();
             }
     }
 
