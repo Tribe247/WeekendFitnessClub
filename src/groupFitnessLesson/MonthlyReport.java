@@ -2,7 +2,7 @@ package groupFitnessLesson;
 
 import java.util.Scanner;
 
-public class LessonReportFetch {
+public class MonthlyReport {
 
     Scanner reportCls = new Scanner(System.in);
 

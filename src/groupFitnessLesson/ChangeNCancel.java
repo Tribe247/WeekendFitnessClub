@@ -1,5 +1,6 @@
 package groupFitnessLesson;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ChangeNCancel {
@@ -9,11 +10,15 @@ public class ChangeNCancel {
     // Creating an object for the sub launcher to call my functions
     //SubLauncher sbl1 = new SubLauncher();
 
-    // Object of the ChData
-    ChData chD1 = new ChData();
 
     // Creating Object for Time table Launcher
     TimeTableLauncher tb1 = new TimeTableLauncher();
+
+    // Method for alternate options
+    AlternateOptions alt = new AlternateOptions();
+
+    // Instance of the class
+    FitnessLesson ft =  FitnessLesson.getInstance();
 
 
     public void changeBooking() {
@@ -26,84 +31,106 @@ public class ChangeNCancel {
         if ( changeOp == 1) {
 
             // Creating an input stream to select customer particular booking to change
-            System.out.print("Please select the booking to change" +
-                    "\n 1. Henry for Sun Sat" + "\n 2. Henry for Sat Fit" + "\n 3. Henry for Sat Fit" + "\n 4. Henry for Sat Fit");
-            int cusToChange = changeIn.nextInt();
-            switch (cusToChange) {
-                case 1:
-                    // This method has been programmed in the fitness lesson to change and booked new session
-                    // Remember to create a separate class for cancel/change input
-                    chD1.zumba21st("Henry112");
-                    System.out.println("Record found and successfully, Please follow the procedure below to book another fitness lesson session");
-                    tb1.timeTableWelcome();
-                    System.out.println("Session is changed from Henry112 Saturday to The new input from BookingID");
-                    break;
-                case 2:
-                    // This method has been programmed in the fitness lesson to change and cancel
-                    chD1.zumba21st("Henry114");
-                    System.out.println("Please follow the procedure below to book another fitness lesson session");
-                    tb1.timeTableWelcome();
-                    System.out.println("Session is changed from Henry112 Saturday to" + "The new input from BookingID");
+            System.out.print("Please select the date and session you booked for::: \n");
+            System.out.println(
+                    "\n                      7th Jan          14 Jan          21 Jan            28 Jan" +
+                            "\n Morning:     1.Yoga           3.Yoga          5.Yoga            7.Yoga" +
+                            "\n Evening:     2.Spin           4.Spin          6.Spin            8.Spin \n" +
 
-                    break;
-                case 3:
-                    // This method has been programmed in the fitness lesson to change and cancel
-                    chD1.zumba21st("Henry124");
-                    System.out.println("Please follow the procedure below to book another fitness lesson session");
-                    tb1.timeTableWelcome();
-                    System.out.println("Session is changed from Henry112 Saturday to" + "The new input from BookingID");
+                            "                8th Jan          15 Jan          22 Jan            29 Jan   " +
+                            "\n Morning:     9.Aquacise       11.Aquacise     13.Aquacise       15.Aquacise" +
+                            "\n Evening:     10.Zumba         12.Zumba        14.Zumba          16.Zumba  \n" +
 
-                    break;
-                case 4:
-                    // This method has been programmed in the fitness lesson to change and cancel
-                    chD1.zumba21st("Henry121");
-                    System.out.println("Please follow the procedure below to book another fitness lesson session");
-                    tb1.timeTableWelcome();
-                    System.out.println("Session is changed from Henry112 Saturday to + The new input from BookingID");
+                            "\n              4 Feb            11 Feb          18 Jan            25 Feb      " +
+                            "\n Morning:     17.Yoga          19.Yoga         21.Yoga           23.Yoga     " +
+                            "\n Evening:     18.Spin          20.Spin         22.Spin           24.Spin   \n" +
 
-                    break;
-                default:
-                    System.out.println("No booked session for the selected period");
+                            "\n              5 Feb            12 Feb          19 Jan            26 Feb         " +
+                            "\n Morning:     25.Aquacise      27.Aquacise     29.Aquacise       31.Aquacise    " +
+                            "\n Evening:     26.Zumba          28.Zumba       30.Zumba          32.Zumba     \n");
+
+            try {
+                int cusToChange = changeIn.nextInt();
+                switch (cusToChange) {
+                    case 1:
+                        System.out.println("Input your BookingID: \n");
+                        Scanner changeInc = new Scanner(System.in);
+                        String BookingID = changeInc.nextLine();
+                        ft.changeYoga7thJ(BookingID , "Yoga Morning Session on the 7th of January");
+                        alt.AltOpt2();
+                        break;
+                    case 2:
+                        System.out.println("No booked ");
+                        break;
+                    case 3:
+                        System.out.println("No one booked ");
+                        break;
+                    case 4:
+                        System.out.println("No booked two ");
+
+                        break;
+                    default:
+                        System.out.println("No booked session for the selected period");
+                }
             }
+            catch (InputMismatchException e) {
+                    System.out.println("This an invalid input ::: You will be redirected for other options \n \n \n ");
+                    alt.AltOpt1();
+            }
+
         }
         else if (changeOp == 2) {
-            // Creating an input stream to select customer particular booking to change
-            System.out.print("Please select the booking to cancel" +
-                    "\n 1. Henry for Sun Sat" + "\n 2. Henry for Sat Fit" + "\n 3. Henry for Sat Fit" + "\n 4. Henry for Sat Fit");
-            int cusToCancel = changeIn.nextInt();
-            switch (cusToCancel) {
-                case 1:
-                    // This method has been programmed in the fitness lesson to cancel session
-                    // Remember to create a separate class for cancel/change input
-                    chD1.zumba21st("Henry112");
-                    System.out.println("Record found and successfully cancel");
-                    //tb1.timeTableWelcome();
-                    break;
-                case 2:
-                    // This method has been programmed in the fitness lesson to cancel a session
-                    chD1.zumba21st("Henry102");
-                    System.out.println("Record found and successfully, Please follow the procedure below to book another fitness lesson session");
-                    //tb1.timeTableWelcome();
-                    break;
-                case 3:
-                    // This method has been programmed in the fitness lesson to cancel a session
-                    chD1.zumba21st("Henry132");
-                    System.out.println("Record found and successfully, Please follow the procedure below to book another fitness lesson session");
-                    //tb1.timeTableWelcome();
-                    break;
-                case 4:
-                    // This method has been programmed in the fitness lesson to cancel a session
-                    chD1.zumba21st("Henry172");
-                    System.out.println("Record found and successfully, Please follow the procedure below to book another fitness lesson session");
-                    //tb1.timeTableWelcome();
-                    break;
-                default:
-                    System.out.println("No booked session for the selected period");
-                    break;
+            System.out.print("Please select the date and session you booked for::: \n");
+            System.out.println(
+                    "\n                      7th Jan          14 Jan          21 Jan            28 Jan" +
+                            "\n Morning:     1.Yoga           3.Yoga          5.Yoga            7.Yoga" +
+                            "\n Evening:     2.Spin           4.Spin          6.Spin            8.Spin \n" +
+
+                            "                8th Jan          15 Jan          22 Jan            29 Jan   " +
+                            "\n Morning:     9.Aquacise       11.Aquacise     13.Aquacise       15.Aquacise" +
+                            "\n Evening:     10.Zumba         12.Zumba        14.Zumba          16.Zumba  \n" +
+
+                            "\n              4 Feb            11 Feb          18 Jan            25 Feb      " +
+                            "\n Morning:     17.Yoga          19.Yoga         21.Yoga           23.Yoga     " +
+                            "\n Evening:     18.Spin          20.Spin         22.Spin           24.Spin   \n" +
+
+                            "\n              5 Feb            12 Feb          19 Jan            26 Feb         " +
+                            "\n Morning:     25.Aquacise      27.Aquacise     29.Aquacise       31.Aquacise    " +
+                            "\n Evening:     26.Zumba          28.Zumba       30.Zumba          32.Zumba     \n");
+
+            try {
+                int cusToCancle = changeIn.nextInt();
+                switch (cusToCancle) {
+                    case 1:
+                        System.out.println("Input your BookingID: \n");
+                        Scanner changeInca = new Scanner(System.in);
+                        String BookingID = changeInca.nextLine();
+                        ft.cancelYoga7thJ(BookingID , "Yoga Morning Session on the 7th of January");
+                        alt.AltOpt1();
+                        break;
+                    case 2:
+                        System.out.println("No booked ");
+                        break;
+                    case 3:
+                        System.out.println("No one booked ");
+                        break;
+                    case 4:
+                        System.out.println("No booked two ");
+
+                        break;
+                    default:
+                        System.out.println("No booked session for the selected period");
+                }
             }
+            catch (InputMismatchException e) {
+                System.out.println("This an invalid input ::: You will be redirected for other options \n \n \n ");
+                alt.AltOpt1();
+            }
+
         }
         else {
-            System.out.println(" Invalid Selection ");
+            System.out.println(" Invalid Selection, You will be redirected for other options ");
+            alt.AltOpt1();
         }
 
     }

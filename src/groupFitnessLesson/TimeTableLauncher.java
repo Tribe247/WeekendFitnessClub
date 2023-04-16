@@ -6,7 +6,7 @@ public class TimeTableLauncher {
 
     Scanner welcomeIn = new Scanner(System.in);
 
-    LessonDay ld1 = new LessonDay();
+    Booking ld1 = new Booking();
 
     public void timeTableWelcome(){
 

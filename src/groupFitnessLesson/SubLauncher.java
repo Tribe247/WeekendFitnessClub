@@ -20,14 +20,17 @@ public class SubLauncher {
         //Object of cancel and change
         ChangeNCancel nCa = new ChangeNCancel();
 
-        //ChData chdt = new ChData();
+        //AlternateOptions chdt = new AlternateOptions();
 
         // Object of the class timetable / booking
         TimeTableLauncher tb = new TimeTableLauncher();
 
+        // Object to attend lesson
+        AttendLesson at = new AttendLesson();
+
 
         // Object of the rate/Review class
-        ReviewAttend newRev = new ReviewAttend();
+        RateReview rr = new RateReview();
 
         //Object of report class
         GeneralReportToLaunch genR = new GeneralReportToLaunch();
@@ -38,8 +41,9 @@ public class SubLauncher {
                 "\n PRESS 1: To Book a lesson " +
                 "\n PRESS 2: To change or cancel a lesson " +
                 "\n PRESS 3: To attend a lesson " +
-                "\n PRESS 4: Check monthly fitness and booking report " +
-                "\n PRESS 5: To EXIT");
+                "\n PRESS 4: To rate or Review" +
+                "\n PRESS 5: Check monthly fitness and booking report " +
+                "\n PRESS 6: To EXIT");
 
         int menu = Launcher1.nextInt();
         switch (menu) {
@@ -54,20 +58,21 @@ public class SubLauncher {
                 break;
             case 3:
                 // A method called to initiate review/rating
-                newRev.toCallAttend();
+                at.attendL();
                 break;
             case 4:
-                //A method to call general report
-
-                genR.allReport();
-
+                // A method called to initiate review/rating
+                rr.revRatWlc();
                 break;
             case 5:
+                //A method to call general report
+                genR.allReport();
+                break;
+            case 6:
                 System.exit(0);
             default:
                 System.out.println("Invalid Entry");
         }
-
 
     }
 }

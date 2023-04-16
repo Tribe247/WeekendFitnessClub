@@ -5,6 +5,16 @@ import java.util.Scanner;
 
 public class FitnessLesson {
 
+    private static FitnessLesson instance;
+
+
+    public static synchronized FitnessLesson getInstance() {
+        if (instance == null) {
+            instance = new FitnessLesson();
+        }
+        return instance;
+    }
+
     Launcher lh1 = new Launcher();
 
     Scanner ftScanner = new Scanner(System.in);
@@ -15,30 +25,139 @@ public class FitnessLesson {
 
     //Implementing my discursion with wale
 
+    public FitnessLesson() {
+        this.yoga7thJan = new HashMap<>();
+    }
+
 
     // Yoga Lesson Data
-    private HashMap<String, String> yoga7thJan = new HashMap<>();
+    private HashMap<String, String> yoga7thJan;
 
-    public void addYoga7thJ(String name, String lesson) {
+    public void addYoga7thJ(String lastName, String lesson) {
+
         if (yoga7thJan.size() < 5 ) {
-            if (yoga7thJan.containsKey(name)) {
+            if (yoga7thJan.containsKey(lastName)) {
                 System.out.println("You cannot be added to a session twice");
             } else {
-                yoga7thJan.put( name , lesson);
+                yoga7thJan.put( lastName , lesson);
+                System.out.println("Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
+                System.out.println("Lesson Status: Lesson Booked");
 
                 // Remove the comment to confirm all session are booked
                 //for (String i : yoga7thJan.keySet()) {
-                //System.out.println("Key: " + i + ", Value: " + yoga7thJan.get(i));}
-
-            for (String i : yoga7thJan.keySet()) {
-                System.out.println("Booking is successful");
-                System.out.println("Booking ID: " + name + "  Session Booked: " + lesson);
-            }
+                    //System.out.println("Key: " + i + ", Value: " + yoga7thJan.get(i));
+                //}
             }
         }
         else if (yoga7thJan.size() == 5)  {
             System.out.println("Session is filled up, Try another another session\n ");
+        }
+    }
 
+    public void changeYoga7thJ(String lastName , String lesson) {
+
+        if (yoga7thJan.containsKey(lastName)) {
+            yoga7thJan.remove(lastName);
+            System.out.println("Record found, Please proceed:  \n");
+
+        } else {
+            System.out.println("You do not have a booked session, See other Options::: ");
+        }
+    }
+
+    public void cancelYoga7thJ(String lastName, String lesson) {
+        if (yoga7thJan.containsKey(lastName)) {
+            yoga7thJan.remove(lastName);
+            System.out.println("Record found, and Successfully cancelled  \n");
+            System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
+            System.out.println("Lesson Status: Attended \n");
+
+        } else {
+            System.out.println("You do not have a booked session, See other Options::: ");
+        }
+    }
+    public void attendYoga7thJ(String lastName , String lesson){
+        if (yoga7thJan.containsKey(lastName)) {
+            System.out.println(" Thank you for attending your lesson");
+
+            System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
+            System.out.println("Lesson Status: Attended \n");
+
+            // It can call a method for rate and review
+            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
+                               " PRESS 1: To review or rate \n" +
+                               " PRESS 2: For Main Menu \n" +
+                               " PRESS 3: To Quit \n");
+
+            int inR = ftScanner.nextInt();
+            if(inR == 1 ) {
+                // Method to rev and rating
+            }
+            else if (inR == 2 ) {
+                // Method to main menu
+            }
+            else if (inR == 3 ) {
+                // Method to quit
+            }
+            else {
+                System.out.println("Invalid Input, You will be redirected for other option");
+
+            }
+
+
+        } else {
+            System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
+            // Method to menu
+        }
+    }
+
+    public void rateYoga7thJ(String lastName){
+        if (yoga7thJan.containsKey(lastName)) {
+            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+                    "\n PRESS 1: Very dissatisfied " +
+                    "\n PRESS 2: Dissatisfied " +
+                    "\n PRESS 3: OK" +
+                    "\n PRESS 4: Satisfied" +
+                    "\n PRESS 5: Very Satisfied");
+
+            int rating = ftScanner.nextInt();
+
+            if (rating == 1) {
+                System.out.println("Customer is Very dissatisfied" +
+                                   "\n We hope to serve you better");
+            } else if (rating == 2) {
+                System.out.println("Customer is dissatisfied" +
+                        "\n We hope to serve you better");
+            } else if (rating == 3) {
+                System.out.println("Customer is OK" +
+                        "\n We hope to serve you better");
+            } else if (rating == 4) {
+                System.out.println("Customer is Satisfied" +
+                        "\n We hope to serve you better");
+            } else if (rating == 5) {
+                System.out.println("Customer is Very Satisfied" +
+                        "\n We hope to serve you better");
+            } else {
+                System.out.println("Invalid Selection");
+                // Call method to main menu
+            }
+        }
+
+        else {
+                System.out.println("Record not found, You can not rate this lesson ");
+                // call for main method
+            }
+        }
+
+    public void reviewYoga7thJ(String lastName) {
+        if (yoga7thJan.containsKey(lastName)) {
+            System.out.println("Record found for (Lesson Details), Please leave your review");
+            String review = ftScanner.nextLine();
+
+            System.out.println("Your Review: " + review + "\n Thank you for the feedback");
+        }
+        else {
+            System.out.println("Record not found, You can not rate this lesson ");
         }
     }
 

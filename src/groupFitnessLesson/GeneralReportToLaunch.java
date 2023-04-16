@@ -7,7 +7,7 @@ public class GeneralReportToLaunch {
     Scanner allRepIn = new Scanner(System.in);
 
     //Object of the report fetch class
-    LessonReportFetch rF = new LessonReportFetch();
+    MonthlyReport rF = new MonthlyReport();
     public void allReport(){
 
         System.out.println("Welcome to your report portal. Select the type of report" +
