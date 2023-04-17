@@ -14,8 +14,8 @@ public class AlternateOptions {
     public void AltOpt1(){
         // This method contains main menu and Exit
         System.out.println("What else will you like to do: \n" +
-                           "PRESS 1: For Main Menu \n" +
-                           "PRESS 2: To EXIT \n");
+                "PRESS 1: To Main Menu \n" +
+                "PRESS 2: To EXIT \n");
 
         int OptionIn = altOpt.nextInt();
         if (OptionIn == 1){
@@ -23,15 +23,13 @@ public class AlternateOptions {
             sbl.welcomePage1();
         }
         else if (OptionIn == 2) {
-            System.out.println("Thank you for your patronage, Hope to see you next time...");
+            System.out.println("Thank you for your patronage, We Hope to see you next time...\n");
             System.exit(0);
         }
         else{
-            System.out.println("Invalid Input, You will be redirected to main page");
+            System.out.println("Invalid Input, You will be redirected to main page...\n");
             sbl.welcomePage1();
-
         }
-
     }
 
     public void AltOpt2(){
@@ -42,7 +40,7 @@ public class AlternateOptions {
         // This method contains timetable, main menu and Exit
         System.out.println("Key in for other options: \n" +
                 "PRESS 1: To book a new session \n" +
-                "PRESS 2: For Main Menu \n" +
+                "PRESS 2: To Main Menu \n" +
                 "PRESS 3: To EXIT \n");
 
         int OptionIn = altOpt.nextInt();
@@ -54,11 +52,11 @@ public class AlternateOptions {
             sbl.welcomePage1();
         }
         else if (OptionIn == 3) {
-            System.out.println("Thank you for your patronage, Hope to see you next time...");
+            System.out.println("Thank you for your patronage, Hope to see you next time...\n");
             System.exit(0);
         }
         else{
-            System.out.println("Invalid Input, You will be redirected to main page");
+            System.out.println("Invalid Input, You will be redirected to main page...\n");
             sbl.welcomePage1();
 
         }

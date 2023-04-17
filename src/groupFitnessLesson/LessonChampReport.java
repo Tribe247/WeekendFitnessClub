@@ -27,7 +27,7 @@ public class LessonChampReport {
 
             int lessonR = lcR.nextInt();
             if ( lessonR == 1 ) {
-                System.out.println("Lesson Report for Month 01");
+                System.out.println("LESSON REPORT FOR MONTH 01");
                 ft.lessonReportYoga7thJan();
 
                 alt.AltOpt1();
@@ -36,7 +36,7 @@ public class LessonChampReport {
 
             }
             else if (lessonR == 2) {
-                System.out.println("Lesson Report for Month 02");
+                System.out.println("LESSON REPORT FOR MONTH 02");
 
             }
             else{
@@ -62,7 +62,7 @@ public class LessonChampReport {
 
             }
             else if (lessonR == 2) {
-                System.out.println("Lesson Report for Month 01");
+                System.out.println("CHAMPION REPORT FOR MONTH 02");
 
 
             }

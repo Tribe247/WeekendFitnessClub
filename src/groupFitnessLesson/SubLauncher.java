@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class SubLauncher {
 
     public void welcomePage() {
-        System.out.println("Welcome to Group Fitness Lesson. You can Book a new lesson, attend a lesson," +
-                           "\nChange or cancel booked lesson or Check monthly fitness and booking report");
+        System.out.println(" ***Welcome to Group Fitness Lesson. You can Book a new lesson, attend a lesson,***\n" +
+                           "         ***Change  or cancel booked lesson and Check monthly report*** \n");
     }
 
     public void welcomePage1() {
@@ -45,7 +45,7 @@ public class SubLauncher {
                 "\n PRESS 2: To change or cancel a lesson " +
                 "\n PRESS 3: To attend a lesson " +
                 "\n PRESS 4: To rate or Review" +
-                "\n PRESS 5: Check monthly fitness and booking report " +
+                "\n PRESS 5: To check monthly report " +
                 "\n PRESS 6: To EXIT");
 
         try {
@@ -73,7 +73,7 @@ public class SubLauncher {
                     LCR.reportLaunch();
                     break;
                 case 6:
-                    System.out.println("Thank you for your time...");
+                    System.out.println("Thank you for your patronage, We Hope to see you next time...\n");
 
                     System.exit(0);
                 default:

@@ -14,24 +14,33 @@ public class AttendLesson {
 
     public void attendL() {
 
-        System.out.println("Please select your lesson and session: \n");
-
         System.out.println(
-                "\n                      7th Jan          14 Jan          21 Jan            28 Jan" +
-                        "\n Morning:     1.Yoga           3.Yoga          5.Yoga            7.Yoga" +
-                        "\n Evening:     2.Spin           4.Spin          6.Spin            8.Spin \n" +
+                        "\n              7th Jan          14 Jan          21 Jan          28 Jan       " +
+                        "\n Morning:     1.Yoga           2.Yoga          3.Yoga          4.Yoga       " +
+                        "\n Price          £ 21             £ 21            £ 21            £ 21       " +
+                        "\n Evening:     5.Spin           6.Spin          7.Spin          8.Spin       " +
+                        "\n Price          £ 25             £ 25            £ 25            £ 25     \n" +
 
-                        "                8th Jan          15 Jan          22 Jan            29 Jan   " +
-                        "\n Morning:     9.Aquacise       11.Aquacise     13.Aquacise       15.Aquacise" +
-                        "\n Evening:     10.Zumba         12.Zumba        14.Zumba          16.Zumba  \n" +
 
-                        "\n              4 Feb            11 Feb          18 Jan            25 Feb      " +
-                        "\n Morning:     17.Yoga          19.Yoga         21.Yoga           23.Yoga     " +
-                        "\n Evening:     18.Spin          20.Spin         22.Spin           24.Spin   \n" +
+                        "                8th Jan          15 Jan          22 Jan          29 Jan       " +
+                        "\n Morning:     9.Aquacise       10.Aquacise     11.Aquacise     12.Aquacise  " +
+                        "\n Price          £ 33             £ 33            £ 33            £ 33       " +
+                        "\n Evening:     13.Zumba         14.Zumba        15.Zumba        16.Zumba     " +
+                        "\n Price          £ 35             £ 35            £ 35            £ 35     \n" +
 
-                        "\n              5 Feb            12 Feb          19 Jan            26 Feb         " +
-                        "\n Morning:     25.Aquacise      27.Aquacise     29.Aquacise       31.Aquacise    " +
-                        "\n Evening:     26.Zumba          28.Zumba       30.Zumba          32.Zumba     \n");
+                        "\n              4 Feb            11 Feb          18 Feb          25 Feb       " +
+                        "\n Morning:     17.Yoga          18.Yoga         19.Yoga         20.Yoga      " +
+                        "\n Price          £ 21             £ 21            £ 21            £ 21       " +
+                        "\n Evening:     21.Spin          22.Spin         23.Spin         24.Spin    \n" +
+                        "\n Price          £ 25             £ 25            £ 25            £ 25       " +
+
+                        "\n              5 Feb            12 Feb          19 Jan          26 Feb       " +
+                        "\n Morning:     25.Aquacise      26.Aquacise     27.Aquacise     28.Aquacise  " +
+                        "\n Price          £ 33             £ 33            £ 33            £ 33       " +
+                        "\n Evening:     29.Zumba         30.Zumba        31.Zumba        32.Zumba   \n" +
+                        "\n Price          £ 35             £ 35            £ 35            £ 35     \n");
+
+        System.out.print("Please select the number of date and session you booked for: \n");
 
         try {
             int attendNew = attendIn.nextInt();
@@ -39,15 +48,23 @@ public class AttendLesson {
                 case 1:
                     System.out.println("Enter your Booking ID \n");
                     Scanner case1In = new Scanner(System.in);
-                    String BookingID = case1In.nextLine();
-                    ft.attendYoga7thJ(BookingID , "Yoga Morning Session on the 7th of January");
+                    String BookingID1 = case1In.nextLine();
+                    ft.attendYoga7thJ(BookingID1 , "Yoga Morning Session on the 7th of January");
                     alt.AltOpt1();
                     break;
                 case 2:
-                    System.out.println("Thursday6");
+                    System.out.println("Enter your Booking ID \n");
+                    Scanner case2In = new Scanner(System.in);
+                    String BookingID2 = case2In.nextLine();
+                    ft.attendYoga14thJ(BookingID2 , "Yoga Morning Session on the 7th of January");
+                    alt.AltOpt1();
                     break;
                 case 3:
-                    System.out.println("Thursday666");
+                    System.out.println("Enter your Booking ID \n");
+                    Scanner case3In = new Scanner(System.in);
+                    String BookingID3 = case3In.nextLine();
+                    ft.attendYoga21J(BookingID3 , "Yoga Morning Session on the 7th of January");
+                    alt.AltOpt1();
                     break;
                 case 4:
                     System.out.println("Thursday");
