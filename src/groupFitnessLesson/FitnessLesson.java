@@ -205,7 +205,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                 "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                 "   PRICE OF LESSON: " + price +
-                "T      OTAL INCOME: " + totalIncome + "\n");
+                "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -349,10 +349,10 @@ public class FitnessLesson {
         double price = 21.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "                    LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -494,10 +494,10 @@ public class FitnessLesson {
         double price = 21.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "                    LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -642,7 +642,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -788,7 +788,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -935,7 +935,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -1080,7 +1080,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -1227,7 +1227,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -1375,7 +1375,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -1522,7 +1522,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -1667,7 +1667,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -1815,7 +1815,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -1965,7 +1965,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -2110,7 +2110,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -2255,7 +2255,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -2546,7 +2546,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
     private HashMap<String, String> Aquacise15thJan;
@@ -2690,7 +2690,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -2839,7 +2839,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
     private HashMap<String, String> Aquacise29thJan;
@@ -2983,7 +2983,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -3129,7 +3129,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -3274,7 +3274,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
     private HashMap<String, String> Aquacise19thFeb;
@@ -3418,7 +3418,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
     private HashMap<String, String> Aquacise26thFeb;
@@ -3562,7 +3562,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -3709,7 +3709,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
     private HashMap<String, String> zumba15thJan;
@@ -3853,7 +3853,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
     private HashMap<String, String> zumba22ndJan;
@@ -3997,7 +3997,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
     private HashMap<String, String> zumba29thJan;
@@ -4141,7 +4141,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 
@@ -4288,7 +4288,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
     private HashMap<String, String> zumba12thFeb;
@@ -4432,7 +4432,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
     private HashMap<String, String> zumba19thFeb;
@@ -4576,7 +4576,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
     private HashMap<String, String> zumba26thFeb;
 
@@ -4719,156 +4719,10 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
-
-
 }
 
-    /*
-    public void addSpin7F(String lastName, String lesson) {
-
-        if (yogathFeb.size() < 5 ) {
-            if (yogathFeb.containsKey(lastName)) {
-                System.out.println("You cannot be added to a session twice");
-            } else {
-                yogathFeb.put( lastName , lesson);
-                System.out.println("Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
-                System.out.println("Lesson Status: Lesson Booked \n");
-                System.out.println("Please always keep your lesson details, It may be required for  \n" +
-                        "other activities on the portal \n");
-
-                // Remove the comment to confirm all session are booked
-                //for (String i : yoga25thFeb.keySet()) {
-                //System.out.println("Key: " + i + ", Value: " + yoga14thJan.get(i));
-                //}
-            }
-        }
-        else if (yogathFeb.size() == 5)  {
-            System.out.println("Session is filled up, Try another another session\n ");
-        }
-    }
-    public void changeSpin7F(String lastName , String lesson) {
-
-        if (yogathFeb.containsKey(lastName)) {
-            yogathFeb.remove(lastName);
-            System.out.println("Record found, Please proceed:  \n");
-
-        } else {
-            System.out.println("You do not have a booked session, See other Options::: ");
-        }
-    }
-    public void cancelSpin7F(String lastName, String lesson) {
-        if (yogathFeb.containsKey(lastName)) {
-            yogathFeb.remove(lastName);
-            System.out.println("Record found, and Successfully cancelled  \n");
-            System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
-            System.out.println("Lesson Status: Attended \n");
-
-        } else {
-            System.out.println("You do not have a booked session, See other Options::: ");
-        }
-    }
-    public void attendSpin7F(String lastName , String lesson){
-        if (yogathFeb.containsKey(lastName)) {
-            System.out.println(" Thank you for attending your lesson");
-
-            System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
-            System.out.println("Lesson Status: Attended \n");
-
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
-        } else {
-            System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
-        }
-    }
-    public void rateSpin7F(String lastName){
-        if (yogathFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
-                    "\n PRESS 1: Very dissatisfied " +
-                    "\n PRESS 2: Dissatisfied " +
-                    "\n PRESS 3: OK" +
-                    "\n PRESS 4: Satisfied" +
-                    "\n PRESS 5: Very Satisfied");
-
-            int rating = ftScanner.nextInt();
-
-            if (rating == 1) {
-                System.out.println("Customer is Very dissatisfied" +
-                        "\n We hope to serve you better");
-            } else if (rating == 2) {
-                System.out.println("Customer is dissatisfied" +
-                        "\n We hope to serve you better");
-            } else if (rating == 3) {
-                System.out.println("Customer is OK" +
-                        "\n We hope to serve you better");
-            } else if (rating == 4) {
-                System.out.println("Customer is Satisfied" +
-                        "\n We hope to serve you better");
-            } else if (rating == 5) {
-                System.out.println("Customer is Very Satisfied" +
-                        "\n We hope to serve you better");
-            } else {
-                System.out.println("Invalid Selection");
-                // Call method to main menu
-            }
-        }
-
-        else {
-            System.out.println("Record not found, You can not rate this lesson ");
-            // call for main method
-        }
-    }
-    public void reviewSpin7F(String lastName) {
-        if (yogathFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
-            String review = ftScanner.nextLine();
-
-            System.out.println("Your Review: " + review + "\n Thank you for the feedback");
-        }
-        else {
-            System.out.println("Record not found, You can not rate this lesson ");
-        }
-    }
-    public void lessonReportSpin7F(){
-        int NoOfCustomer = yogathFeb.size();
-        String avRating = "Null";
-        System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
-                        "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
-                        "    AVERAGE RATING: " + avRating + "\n" );
-    }
-    public void champReportSpin7F(){
-        int NoOfCustomer = yogathFeb.size();
-        double price = 27.00;
-        double totalIncome = NoOfCustomer * price;
-        System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
-                        "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
-                        "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
-    }
-
- */
 
 
 
