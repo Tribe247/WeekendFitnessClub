@@ -21,21 +21,21 @@ public class RateReview {
             System.out.println("Please select your lesson and session: \n");
 
             System.out.println(
-                    "\n                      7th Jan          14 Jan          21 Jan            28 Jan" +
-                            "\n Morning:     1.Yoga           3.Yoga          5.Yoga            7.Yoga" +
-                            "\n Evening:     2.Spin           4.Spin          6.Spin            8.Spin \n" +
+                    "\n                      7th Jan          14 Jan          21 Jan            28 Jan     " +
+                            "\n Morning:     1.Yoga           3.Yoga          5.Yoga            7.Yoga     " +
+                            "\n Evening:     2.Spin           4.Spin          6.Spin            8.Spin \n  " +
 
-                            "                8th Jan          15 Jan          22 Jan            29 Jan   " +
+                            "                8th Jan          15 Jan          22 Jan            29 Jan     " +
                             "\n Morning:     9.Aquacise       11.Aquacise     13.Aquacise       15.Aquacise" +
-                            "\n Evening:     10.Zumba         12.Zumba        14.Zumba          16.Zumba  \n" +
+                            "\n Evening:     10.Zumba         12.Zumba        14.Zumba          16.Zumba \n" +
 
-                            "\n              4 Feb            11 Feb          18 Jan            25 Feb      " +
-                            "\n Morning:     17.Yoga          19.Yoga         21.Yoga           23.Yoga     " +
-                            "\n Evening:     18.Spin          20.Spin         22.Spin           24.Spin   \n" +
+                            "\n              4 Feb            11 Feb          18 Feb            25 Feb     " +
+                            "\n Morning:     17.Yoga          19.Yoga         21.Yoga           23.Yoga    " +
+                            "\n Evening:     18.Spin          20.Spin         22.Spin           24.Spin  \n" +
 
-                            "\n              5 Feb            12 Feb          19 Jan            26 Feb         " +
-                            "\n Morning:     25.Aquacise      27.Aquacise     29.Aquacise       31.Aquacise    " +
-                            "\n Evening:     26.Zumba          28.Zumba       30.Zumba          32.Zumba     \n");
+                            "\n              5 Feb            12 Feb          19 Jan            26 Feb     " +
+                            "\n Morning:     25.Aquacise      27.Aquacise     29.Aquacise       31.Aquacise" +
+                            "\n Evening:     26.Zumba          28.Zumba       30.Zumba          32.Zumba \n");
 
             try {
                 int revRatS = revRat.nextInt();
@@ -165,7 +165,7 @@ public class RateReview {
                             "\n Morning:     9.Aquacise       11.Aquacise     13.Aquacise       15.Aquacise" +
                             "\n Evening:     10.Zumba         12.Zumba        14.Zumba          16.Zumba  \n" +
 
-                            "\n              4 Feb            11 Feb          18 Jan            25 Feb      " +
+                            "\n              4 Feb            11 Feb          18 Feb            25 Feb      " +
                             "\n Morning:     17.Yoga          19.Yoga         21.Yoga           23.Yoga     " +
                             "\n Evening:     18.Spin          20.Spin         22.Spin           24.Spin   \n" +
 
