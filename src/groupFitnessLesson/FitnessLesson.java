@@ -2400,7 +2400,7 @@ public class FitnessLesson {
                 "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
-                        "T      OTAL INCOME: " + totalIncome + "\n");
+                        "      TOTAL INCOME: " + totalIncome + "\n");
     }
 
 

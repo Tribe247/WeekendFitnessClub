@@ -41,9 +41,9 @@ public class LessonChampReport {
                 ft.lessonReportAquacise22J();
                 ft.lessonReportAquacise29J();
                 ft.lessonReportZumba8J();
-                ft.lessonReportAquacise15J();
-                ft.lessonReportAquacise22J();
-                ft.lessonReportAquacise29J();
+                ft.lessonReportZumba15J();
+                ft.lessonReportZumba15J();
+                ft.lessonReportZumba15J();
 
                 alt.AltOpt1();
 
