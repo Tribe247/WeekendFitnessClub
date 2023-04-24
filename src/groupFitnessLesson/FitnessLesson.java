@@ -5,6 +5,11 @@ import java.util.Scanner;
 
 public class FitnessLesson {
 
+
+    AlternateOptions alt = new AlternateOptions();
+
+    ///RateReview rr = new RateReview();
+
     private static FitnessLesson instance;
 
 
@@ -114,36 +119,15 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                               " PRESS 1: To review or rate \n" +
-                               " PRESS 2: For Main Menu \n" +
-                               " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
-
         } else {
-            System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
+            System.out.println("You do not have a booked lesson, What else will you like to do? \n");
             // Method to menu
         }
     }
     public void rateYoga7thJ(String lastName){
         if (yoga7thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -180,7 +164,8 @@ public class FitnessLesson {
         }
     public void reviewYoga7thJ(String lastName) {
         if (yoga7thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -261,28 +246,6 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
             // Method to menu
@@ -290,7 +253,8 @@ public class FitnessLesson {
     }
     public void rateYoga14thJ(String lastName){
         if (yoga14thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -327,7 +291,8 @@ public class FitnessLesson {
     }
     public void reviewYoga14thJ(String lastName) {
         if (yoga14thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                     "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -340,7 +305,7 @@ public class FitnessLesson {
         int NoOfCustomer = yoga14thJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: YOGA                 DATE: 14TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -349,7 +314,7 @@ public class FitnessLesson {
         double price = 21.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "                    LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "                    LESSON: YOGA           DATE:14TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -408,34 +373,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateYoga21J(String lastName){
         if (yoga21stJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -472,7 +417,8 @@ public class FitnessLesson {
     }
     public void reviewYoga21J(String lastName) {
         if (yoga21stJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -485,7 +431,7 @@ public class FitnessLesson {
         int NoOfCustomer = yoga21stJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: YOGA                 DATE: 21TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -494,7 +440,7 @@ public class FitnessLesson {
         double price = 21.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "                    LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "                    LESSON: YOGA           DATE:21TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -553,34 +499,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateYoga28J(String lastName){
         if (yoga28thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -617,7 +543,8 @@ public class FitnessLesson {
     }
     public void reviewYoga28J(String lastName) {
         if (yoga28thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -630,7 +557,7 @@ public class FitnessLesson {
         int NoOfCustomer = yoga28thJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: YOGA                 DATE: 28TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -639,7 +566,7 @@ public class FitnessLesson {
         double price = 21.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: YOGA           DATE:28TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -699,26 +626,6 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
 
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
@@ -726,7 +633,8 @@ public class FitnessLesson {
     }
     public void rateYoga4F(String lastName){
         if (yoga4thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -763,7 +671,8 @@ public class FitnessLesson {
     }
     public void reviewYoga4F(String lastName) {
         if (yoga4thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -776,7 +685,7 @@ public class FitnessLesson {
         int NoOfCustomer = yoga4thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: YOGA                 DATE: 4TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -785,7 +694,7 @@ public class FitnessLesson {
         double price = 21.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: YOGA           DATE:4TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -846,34 +755,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateYoga11F(String lastName){
         if (yoga11thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -910,7 +799,8 @@ public class FitnessLesson {
     }
     public void reviewYoga11F(String lastName) {
         if (yoga11thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -923,7 +813,7 @@ public class FitnessLesson {
         int NoOfCustomer = yoga11thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: YOGA                 DATE: 11TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -932,7 +822,7 @@ public class FitnessLesson {
         double price = 21.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: YOGA           DATE:11TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -991,26 +881,6 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
 
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
@@ -1018,7 +888,8 @@ public class FitnessLesson {
     }
     public void rateYoga18F(String lastName){
         if (yoga18thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -1055,7 +926,8 @@ public class FitnessLesson {
     }
     public void reviewYoga18F(String lastName) {
         if (yoga18thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -1068,7 +940,7 @@ public class FitnessLesson {
         int NoOfCustomer = yoga18thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: YOGA                 DATE: 18TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -1077,7 +949,7 @@ public class FitnessLesson {
         double price = 21.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: YOGA           DATE:18TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -1138,34 +1010,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateYoga25F(String lastName){
         if (yoga25thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -1202,7 +1054,8 @@ public class FitnessLesson {
     }
     public void reviewYoga25F(String lastName) {
         if (yoga25thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -1215,7 +1068,7 @@ public class FitnessLesson {
         int NoOfCustomer = yoga25thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: YOGA                 DATE: 25TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -1224,7 +1077,7 @@ public class FitnessLesson {
         double price = 21.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: YOGA           DATE:25TH        SESSION:MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -1286,26 +1139,6 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
 
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
@@ -1313,7 +1146,8 @@ public class FitnessLesson {
     }
     public void rateSpin7J(String lastName){
         if (Spin7thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -1350,7 +1184,8 @@ public class FitnessLesson {
     }
     public void reviewSpin7J(String lastName) {
         if (Spin7thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -1363,7 +1198,7 @@ public class FitnessLesson {
         int NoOfCustomer = Spin7thJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: SPIN                 DATE: 7TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -1372,7 +1207,7 @@ public class FitnessLesson {
         double price = 25.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: SPIN           DATE:7TH        SESSION:EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -1433,26 +1268,6 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
 
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
@@ -1460,7 +1275,8 @@ public class FitnessLesson {
     }
     public void rateSpin14J(String lastName){
         if (Spin14thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -1497,7 +1313,8 @@ public class FitnessLesson {
     }
     public void reviewSpin14J(String lastName) {
         if (Spin14thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -1578,26 +1395,6 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
 
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
@@ -1605,7 +1402,8 @@ public class FitnessLesson {
     }
     public void rateSpin21J(String lastName){
         if (Spin21stJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -1642,7 +1440,8 @@ public class FitnessLesson {
     }
     public void reviewSpin21J(String lastName) {
         if (Spin21stJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -1655,7 +1454,7 @@ public class FitnessLesson {
         int NoOfCustomer = Spin21stJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: SPIN                 DATE: 21TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -1664,7 +1463,7 @@ public class FitnessLesson {
         double price = 25.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: SPIN           DATE:21TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -1726,34 +1525,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateSpin28J(String lastName){
         if (Spin28thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -1790,7 +1569,8 @@ public class FitnessLesson {
     }
     public void reviewSpin28J(String lastName) {
         if (Spin28thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -1803,7 +1583,7 @@ public class FitnessLesson {
         int NoOfCustomer = Spin28thJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: SPIN                 DATE: 28TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -1812,7 +1592,7 @@ public class FitnessLesson {
         double price = 25.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: SPIN           DATE: 28TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -1876,34 +1656,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateSpin4F(String lastName){
         if (Spin4thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -1940,7 +1700,8 @@ public class FitnessLesson {
     }
     public void reviewSpin4F(String lastName) {
         if (Spin4thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -1962,7 +1723,7 @@ public class FitnessLesson {
         double price = 25.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: SPIN           DATE: 4TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -2021,34 +1782,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateSpin11F(String lastName){
         if (Spin11thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -2085,7 +1826,8 @@ public class FitnessLesson {
     }
     public void reviewSpin11F(String lastName) {
         if (Spin11thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -2166,34 +1908,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateSpin18F(String lastName){
         if (Spin18thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -2230,7 +1952,8 @@ public class FitnessLesson {
     }
     public void reviewSpin18F(String lastName) {
         if (Spin18thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -2243,7 +1966,7 @@ public class FitnessLesson {
         int NoOfCustomer = Spin18thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: SPIN                 DATE: 18TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -2252,7 +1975,7 @@ public class FitnessLesson {
         double price = 25.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: SPIN           DATE: 18TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -2311,34 +2034,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateSpin25F(String lastName){
         if (Spin25thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -2375,7 +2078,8 @@ public class FitnessLesson {
     }
     public void reviewSpin25F(String lastName) {
         if (Spin25thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -2397,7 +2101,7 @@ public class FitnessLesson {
         double price = 25.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: SPIN           DATE:25TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -2457,34 +2161,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateAquacise8J(String lastName){
         if (Aquacise8thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -2521,7 +2205,8 @@ public class FitnessLesson {
     }
     public void reviewAquacise8J(String lastName) {
         if (Aquacise8thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -2534,7 +2219,7 @@ public class FitnessLesson {
         int NoOfCustomer = Aquacise8thJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE                 DATE: 8TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -2543,7 +2228,7 @@ public class FitnessLesson {
         double price = 33.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: AQUACISE           DATE:8TH        SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -2601,34 +2286,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateAquacise15J(String lastName){
         if (Aquacise15thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -2665,7 +2330,8 @@ public class FitnessLesson {
     }
     public void reviewAquacise15J(String lastName) {
         if (Aquacise15thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -2678,7 +2344,7 @@ public class FitnessLesson {
         int NoOfCustomer = Aquacise15thJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE                 DATE: 15TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -2687,7 +2353,7 @@ public class FitnessLesson {
         double price = 33.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: AQUACISE           DATE:15TH        SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -2750,34 +2416,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateAquacise22J(String lastName){
         if (Aquacise22ndJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -2814,7 +2460,8 @@ public class FitnessLesson {
     }
     public void reviewAquacise22J(String lastName) {
         if (Aquacise22ndJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -2827,7 +2474,7 @@ public class FitnessLesson {
         int NoOfCustomer = Aquacise22ndJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE                 DATE: 22TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -2836,7 +2483,7 @@ public class FitnessLesson {
         double price = 33.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: AQUACISE           DATE:22TH        SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -2894,34 +2541,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateAquacise29J(String lastName){
         if (Aquacise29thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -2958,7 +2585,8 @@ public class FitnessLesson {
     }
     public void reviewAquacise29J(String lastName) {
         if (Aquacise29thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -2971,7 +2599,7 @@ public class FitnessLesson {
         int NoOfCustomer = Aquacise29thJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE                 DATE: 29TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -2980,7 +2608,7 @@ public class FitnessLesson {
         double price = 33.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: AQUACISE           DATE: 29TH        SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -3040,34 +2668,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateAquacise5F(String lastName){
         if (Aquacise5thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -3104,7 +2712,8 @@ public class FitnessLesson {
     }
     public void reviewAquacise5F(String lastName) {
         if (Aquacise5thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -3117,7 +2726,7 @@ public class FitnessLesson {
         int NoOfCustomer = Aquacise5thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE                 DATE: 5TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3126,7 +2735,7 @@ public class FitnessLesson {
         double price = 33.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: AQUACISE           DATE:5TH        SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -3185,34 +2794,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateAquacise12F(String lastName){
         if (Aquacise12thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -3249,7 +2838,8 @@ public class FitnessLesson {
     }
     public void reviewAquacise12F(String lastName) {
         if (Aquacise12thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -3262,7 +2852,7 @@ public class FitnessLesson {
         int NoOfCustomer = Aquacise12thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE                 DATE: 12TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3271,7 +2861,7 @@ public class FitnessLesson {
         double price = 33.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: AQUACISE           DATE:12TH        SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -3329,34 +2919,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateAquacise19F(String lastName){
         if (Aquacise19thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -3393,7 +2963,8 @@ public class FitnessLesson {
     }
     public void reviewAquacise19F(String lastName) {
         if (Aquacise19thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -3406,7 +2977,7 @@ public class FitnessLesson {
         int NoOfCustomer = Aquacise19thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE                 DATE: 19TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3415,7 +2986,7 @@ public class FitnessLesson {
         double price = 33.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: AQUACISE           DATE:19TH        SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -3473,34 +3044,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateAquacise26F(String lastName){
         if (Aquacise26thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -3537,7 +3088,8 @@ public class FitnessLesson {
     }
     public void reviewAquacise26F(String lastName) {
         if (Aquacise26thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -3550,7 +3102,7 @@ public class FitnessLesson {
         int NoOfCustomer = Aquacise26thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE                 DATE: 26TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3559,7 +3111,7 @@ public class FitnessLesson {
         double price = 33.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: AQUACISE           DATE:26TH        SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -3620,34 +3172,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateZumba8J(String lastName){
         if (zumba8thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -3684,7 +3216,8 @@ public class FitnessLesson {
     }
     public void reviewZumba8J(String lastName) {
         if (zumba8thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -3697,7 +3230,7 @@ public class FitnessLesson {
         int NoOfCustomer = zumba8thJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: ZUMBA                 DATE: 8TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3706,7 +3239,7 @@ public class FitnessLesson {
         double price = 35.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: ZUMBA           DATE: 8TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -3764,26 +3297,6 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
 
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
@@ -3791,7 +3304,8 @@ public class FitnessLesson {
     }
     public void rateZumba15J(String lastName){
         if (zumba15thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -3828,7 +3342,8 @@ public class FitnessLesson {
     }
     public void reviewZumba15J(String lastName) {
         if (zumba15thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -3841,7 +3356,7 @@ public class FitnessLesson {
         int NoOfCustomer = zumba15thJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: ZUMBA                 DATE: 15TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3850,7 +3365,7 @@ public class FitnessLesson {
         double price = 35.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: ZUMBA           DATE:15TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -3908,34 +3423,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateZumba22J(String lastName){
         if (zumba22ndJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -3972,7 +3467,8 @@ public class FitnessLesson {
     }
     public void reviewZumba22J(String lastName) {
         if (zumba22ndJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -3985,7 +3481,7 @@ public class FitnessLesson {
         int NoOfCustomer = zumba22ndJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: ZUMBA                 DATE: 22TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3994,7 +3490,7 @@ public class FitnessLesson {
         double price = 35.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: ZUMBA           DATE: 22TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -4052,34 +3548,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateZumba29J(String lastName){
         if (zumba29thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -4116,7 +3592,8 @@ public class FitnessLesson {
     }
     public void reviewZumba29J(String lastName) {
         if (zumba29thJan.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -4129,7 +3606,7 @@ public class FitnessLesson {
         int NoOfCustomer = zumba29thJan.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: ZUMBA                 DATE: 29TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -4138,7 +3615,7 @@ public class FitnessLesson {
         double price = 35.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: ZUMBA           DATE: 29TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -4199,34 +3676,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateZumba5F(String lastName){
         if (zumba5thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -4263,7 +3720,8 @@ public class FitnessLesson {
     }
     public void reviewZumba5F(String lastName) {
         if (zumba5thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -4276,7 +3734,7 @@ public class FitnessLesson {
         int NoOfCustomer = zumba5thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: ZUMBA                 DATE: 5TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -4285,7 +3743,7 @@ public class FitnessLesson {
         double price = 35.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: ZUMBA           DATE: 5TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -4343,34 +3801,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateZumba12F(String lastName){
         if (zumba12thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -4407,7 +3845,8 @@ public class FitnessLesson {
     }
     public void reviewZumba12F(String lastName) {
         if (zumba12thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -4420,7 +3859,7 @@ public class FitnessLesson {
         int NoOfCustomer = zumba12thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: ZUMBA                 DATE: 12TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -4429,7 +3868,7 @@ public class FitnessLesson {
         double price = 35.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: ZUMBA           DATE: 12TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -4487,34 +3926,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateZumba19F(String lastName){
         if (zumba19thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -4551,7 +3970,8 @@ public class FitnessLesson {
     }
     public void reviewZumba19F(String lastName) {
         if (zumba19thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -4564,7 +3984,7 @@ public class FitnessLesson {
         int NoOfCustomer = zumba19thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: ZUMBA                 DATE: 19TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -4573,7 +3993,7 @@ public class FitnessLesson {
         double price = 35.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: ZUMBA           DATE: 19TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -4630,34 +4050,14 @@ public class FitnessLesson {
             System.out.println("Lesson Details: \n Booking ID: " + lastName + "  Session Booked: " + lesson + "\n");
             System.out.println("Lesson Status: Attended \n");
 
-            // It can call a method for rate and review
-            System.out.println("We will like to here from you,Please leave a review or rate our program: \n" +
-                    " PRESS 1: To review or rate \n" +
-                    " PRESS 2: For Main Menu \n" +
-                    " PRESS 3: To Quit \n");
-
-            int inR = ftScanner.nextInt();
-            if(inR == 1 ) {
-                // Method to rev and rating
-            }
-            else if (inR == 2 ) {
-                // Method to main menu
-            }
-            else if (inR == 3 ) {
-                // Method to quit
-            }
-            else {
-                System.out.println("Invalid Input, You will be redirected for other option");
-
-            }
-
         } else {
             System.out.println("You do not have a booked lesson, You will be redirected for other options \n");
         }
     }
     public void rateZumba26F(String lastName){
         if (zumba26thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please select rating below review" +
+            System.out.println("Record found for: " + lastName +
+                    "\nPlease select rating below review \n" +
                     "\n PRESS 1: Very dissatisfied " +
                     "\n PRESS 2: Dissatisfied " +
                     "\n PRESS 3: OK" +
@@ -4694,7 +4094,8 @@ public class FitnessLesson {
     }
     public void reviewZumba26F(String lastName) {
         if (zumba26thFeb.containsKey(lastName)) {
-            System.out.println("Record found for (Lesson Details), Please leave your review");
+            System.out.println("Record found for: " + lastName +
+                    "\n Please leave your review");
             String review = ftScanner.nextLine();
 
             System.out.println("Your Review: " + review + "\n Thank you for the feedback");
@@ -4707,7 +4108,7 @@ public class FitnessLesson {
         int NoOfCustomer = zumba26thFeb.size();
         String avRating = "Null";
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: ZUMBA                 DATE: 26TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -4716,7 +4117,7 @@ public class FitnessLesson {
         double price = 35.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: ZUMBA           DATE: 26TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
