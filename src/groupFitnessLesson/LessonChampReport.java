@@ -67,6 +67,8 @@ public class LessonChampReport {
                 ft.lessonReportZumba19F();
                 ft.lessonReportZumba26F();
 
+                alt.AltOpt1();
+
             }
             else{
                 System.out.println("Invalid Input... \n");
@@ -126,6 +128,8 @@ public class LessonChampReport {
                 ft.champReportZumba12F();
                 ft.champReportZumba19F();
                 ft.champReportZumba26F();
+
+                alt.AltOpt1();
 
             }
             else{

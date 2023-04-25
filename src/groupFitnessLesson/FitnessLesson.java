@@ -23,7 +23,46 @@ public class FitnessLesson {
     }
 
     // Declaring List for rating
-    ArrayList<Integer> rateYoga;
+    ArrayList<Integer> rateYoga7J;
+    ArrayList<Integer> rateYoga14J;
+    ArrayList<Integer> rateYoga21J;
+    ArrayList<Integer> rateYoga28J;
+    ArrayList<Integer> rateYoga4F;
+    ArrayList<Integer> rateYoga11F;
+    ArrayList<Integer> rateYoga18F;
+    ArrayList<Integer> rateYoga25F;
+
+    // Spin
+    ArrayList<Integer> rateSpin7J;
+    ArrayList<Integer> rateSpin14J;
+    ArrayList<Integer> rateSpin21J;
+    ArrayList<Integer> rateSpin28J;
+    ArrayList<Integer> rateSpin4F;
+    ArrayList<Integer> rateSpin11F;
+    ArrayList<Integer> rateSpin18F;
+    ArrayList<Integer> rateSpin25F;
+
+    // Aquacise
+    ArrayList<Integer> rateAqua8J;
+    ArrayList<Integer> rateAqua15J;
+    ArrayList<Integer> rateAqua22J;
+    ArrayList<Integer> rateAqua29J;
+    ArrayList<Integer> rateAqua5F;
+    ArrayList<Integer> rateAqua12F;
+    ArrayList<Integer> rateAqua19F;
+    ArrayList<Integer> rateAqua26F;
+
+    // Zumba
+    ArrayList<Integer> rateZumb8J;
+    ArrayList<Integer> rateZumb15J;
+    ArrayList<Integer> rateZumb22J;
+    ArrayList<Integer> rateZumb29J;
+    ArrayList<Integer> rateZumb5F;
+    ArrayList<Integer> rateZumb12F;
+    ArrayList<Integer> rateZumb19F;
+    ArrayList<Integer> rateZumb26F;
+
+
 
 
 
@@ -74,9 +113,57 @@ public class FitnessLesson {
 
 
         //Assigning to rating
-        rateYoga = new ArrayList<Integer>();
+        // Yoga Rating
+        rateYoga7J = new ArrayList<>();
+        rateYoga14J = new ArrayList<>();
+        rateYoga21J = new ArrayList<>();
+        rateYoga28J = new ArrayList<>();
+        rateYoga4F = new ArrayList<>();
+        rateYoga11F = new ArrayList<>();
+        rateYoga18F = new ArrayList<>();
+        rateYoga25F = new ArrayList<>();
+
+        //Spin Rating
+        rateSpin7J = new ArrayList<>();
+        rateSpin14J = new ArrayList<>();
+        rateSpin21J = new ArrayList<>();
+        rateSpin28J = new ArrayList<>();
+        rateSpin4F = new ArrayList<>();
+        rateSpin11F = new ArrayList<>();
+        rateSpin18F = new ArrayList<>();
+        rateSpin25F = new ArrayList<>();
+
+        // Rate Aqua
+        rateAqua8J = new ArrayList<>();
+        rateAqua15J = new ArrayList<>();
+        rateAqua22J = new ArrayList<>();
+        rateAqua29J = new ArrayList<>();
+        rateAqua5F = new ArrayList<>();
+        rateAqua12F = new ArrayList<>();
+        rateAqua19F = new ArrayList<>();
+        rateAqua26F = new ArrayList<>();
+
+        // Rate Zumba
+        rateZumb8J = new ArrayList<>();
+        rateZumb15J = new ArrayList<>();
+        rateZumb22J = new ArrayList<>();
+        rateZumb29J = new ArrayList<>();
+        rateZumb5F = new ArrayList<>();
+        rateZumb12F = new ArrayList<>();
+        rateZumb19F = new ArrayList<>();
+        rateZumb26F = new ArrayList<>();
 
 
+    }
+
+    // Overall Method for rating calculation
+    public double CalculateAveRating(ArrayList<Integer> averageList) {
+        double sum = 0;
+        for (int average : averageList) {
+            sum += average;
+        }
+        double average = sum / averageList.size();
+        return average;
     }
 
 
@@ -133,14 +220,6 @@ public class FitnessLesson {
             // Method to menu
         }
     }
-    public double yogaAveRating() {
-        double sum = 0;
-        for (int average : rateYoga) {
-            sum += average;
-        }
-        double average = sum / rateYoga.size();
-        return average;
-    }
     public void rateYoga7thJ(String lastName){
         if (yoga7thJan.containsKey(lastName)) {
             System.out.println("Record found for: " + lastName +
@@ -154,23 +233,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
-                rateYoga.add(rating);
+                rateYoga7J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                                    "\n We hope to serve you better");
             } else if (rating == 2) {
-                rateYoga.add(rating);
+                rateYoga7J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
-                rateYoga.add(rating);
+                rateYoga7J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
-                rateYoga.add(rating);
+                rateYoga7J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
-                rateYoga.add(rating);
+                rateYoga7J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -198,7 +277,7 @@ public class FitnessLesson {
     }
     public void lessonReportYoga7thJan(){
         int NoOfCustomer = yoga7thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateYoga7J);
         System.out.println(
                 "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
                 "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -286,18 +365,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateYoga14J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateYoga14J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateYoga14J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateYoga14J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateYoga14J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -325,7 +409,7 @@ public class FitnessLesson {
     }
     public void lessonReportYoga14thJan(){
         int NoOfCustomer = yoga14thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateYoga14J);
         System.out.println(
                 "       LESSON TYPE: YOGA                 DATE: 14TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -412,18 +496,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateYoga21J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateYoga21J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateYoga21J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateYoga21J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateYoga21J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -451,7 +540,7 @@ public class FitnessLesson {
     }
     public void lessonReportYoga21J(){
         int NoOfCustomer = yoga21stJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateYoga21J);
         System.out.println(
                 "       LESSON TYPE: YOGA                 DATE: 21TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -538,18 +627,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateYoga28J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateYoga28J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateYoga28J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateYoga28J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateYoga28J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -577,7 +671,7 @@ public class FitnessLesson {
     }
     public void lessonReportYoga28J(){
         int NoOfCustomer = yoga28thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateYoga28J);
         System.out.println(
                 "       LESSON TYPE: YOGA                 DATE: 28TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -666,18 +760,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateYoga4F = new ArrayList<>();
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateYoga4F = new ArrayList<>();
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateYoga4F = new ArrayList<>();
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateYoga4F = new ArrayList<>();
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateYoga4F = new ArrayList<>();
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -705,7 +804,7 @@ public class FitnessLesson {
     }
     public void lessonReportYoga4F(){
         int NoOfCustomer = yoga4thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateYoga4F);
         System.out.println(
                 "       LESSON TYPE: YOGA                 DATE: 4TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -794,18 +893,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateYoga11F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateYoga11F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateYoga11F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateYoga11F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateYoga11F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -833,7 +937,7 @@ public class FitnessLesson {
     }
     public void lessonReportYoga11F(){
         int NoOfCustomer = yoga11thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateYoga11F);
         System.out.println(
                 "       LESSON TYPE: YOGA                 DATE: 11TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -921,18 +1025,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateYoga18F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateYoga18F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateYoga18F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateYoga18F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateYoga18F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -960,7 +1069,7 @@ public class FitnessLesson {
     }
     public void lessonReportYoga18F(){
         int NoOfCustomer = yoga18thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateYoga18F);
         System.out.println(
                 "       LESSON TYPE: YOGA                 DATE: 18TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -1049,18 +1158,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateYoga25F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateYoga25F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateYoga25F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateYoga25F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateYoga25F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -1088,7 +1202,7 @@ public class FitnessLesson {
     }
     public void lessonReportYoga25F(){
         int NoOfCustomer = yoga25thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateYoga25F);
         System.out.println(
                 "       LESSON TYPE: YOGA                 DATE: 25TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -1179,18 +1293,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateSpin7J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateSpin7J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateSpin7J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateSpin7J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateSpin7J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -1218,7 +1337,7 @@ public class FitnessLesson {
     }
     public void lessonReportSpin7J(){
         int NoOfCustomer = Spin7thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateSpin7J);
         System.out.println(
                 "       LESSON TYPE: SPIN                 DATE: 7TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -1308,18 +1427,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateSpin14J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateSpin14J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateSpin14J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateSpin14J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateSpin14J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -1347,9 +1471,9 @@ public class FitnessLesson {
     }
     public void lessonReportSpin14J(){
         int NoOfCustomer = Spin14thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateSpin14J);
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: SPIN                 DATE: 14TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -1358,7 +1482,7 @@ public class FitnessLesson {
         double price = 25.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "            LESSON: SPIN           DATE:14TH        SESSION:EVENING  \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -1435,18 +1559,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateSpin21J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateSpin21J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateSpin21J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateSpin21J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateSpin21J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -1474,7 +1603,7 @@ public class FitnessLesson {
     }
     public void lessonReportSpin21J(){
         int NoOfCustomer = Spin21stJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateSpin21J);
         System.out.println(
                 "       LESSON TYPE: SPIN                 DATE: 21TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -1560,18 +1689,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateSpin28J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateSpin28J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateSpin28J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateSpin28J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateSpin28J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -1599,7 +1733,7 @@ public class FitnessLesson {
     }
     public void lessonReportSpin28J(){
         int NoOfCustomer = Spin28thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateSpin28J);
         System.out.println(
                 "       LESSON TYPE: SPIN                 DATE: 28TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -1691,18 +1825,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateYoga4F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateYoga4F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateYoga4F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateYoga4F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateYoga4F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -1730,9 +1869,9 @@ public class FitnessLesson {
     }
     public void lessonReportSpin4F(){
         int NoOfCustomer = Spin4thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateSpin4F);
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: SPIN                 DATE: 4F           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -1817,18 +1956,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateSpin11F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateSpin11F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateSpin11F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateSpin11F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateSpin11F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -1856,9 +2000,9 @@ public class FitnessLesson {
     }
     public void lessonReportSpin11F(){
         int NoOfCustomer = Spin11thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateSpin11F);
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: SPIN                 DATE: 11TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -1867,7 +2011,7 @@ public class FitnessLesson {
         double price = 25.00;
         double totalIncome = NoOfCustomer * price;
         System.out.println(
-                "            LESSON: YOGA           DATE:7TH        SESSION:MORNING \n" +
+                "                    LESSON: SPIN           DATE:11TH        SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
@@ -1943,18 +2087,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateSpin18F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateSpin18F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateSpin18F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateSpin18F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateSpin18F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -1982,7 +2131,7 @@ public class FitnessLesson {
     }
     public void lessonReportSpin18F(){
         int NoOfCustomer = Spin18thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateSpin18F);
         System.out.println(
                 "       LESSON TYPE: SPIN                 DATE: 18TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -2069,18 +2218,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateSpin25F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateSpin25F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateSpin25F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateSpin25F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateSpin25F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -2108,9 +2262,9 @@ public class FitnessLesson {
     }
     public void lessonReportSpin25F(){
         int NoOfCustomer = Spin25thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateSpin25F);
         System.out.println(
-                "       LESSON TYPE: YOGA                 DATE: 7TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: SPIN                 DATE: 25TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -2196,18 +2350,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateAqua8J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateAqua8J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateAqua8J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateAqua8J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateAqua8J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -2235,7 +2394,7 @@ public class FitnessLesson {
     }
     public void lessonReportAquacise8J(){
         int NoOfCustomer = Aquacise8thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateAqua8J);
         System.out.println(
                 "       LESSON TYPE: AQUACISE                 DATE: 8TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -2321,18 +2480,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateAqua15J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateAqua15J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateAqua15J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateAqua15J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateAqua15J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -2360,7 +2524,7 @@ public class FitnessLesson {
     }
     public void lessonReportAquacise15J(){
         int NoOfCustomer = Aquacise15thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateAqua15J);
         System.out.println(
                 "       LESSON TYPE: AQUACISE                 DATE: 15TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -2451,18 +2615,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateAqua22J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateAqua22J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateAqua22J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateAqua22J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateAqua22J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -2490,7 +2659,7 @@ public class FitnessLesson {
     }
     public void lessonReportAquacise22J(){
         int NoOfCustomer = Aquacise22ndJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateAqua22J);
         System.out.println(
                 "       LESSON TYPE: AQUACISE                 DATE: 22TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -2576,18 +2745,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateAqua29J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateAqua29J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateAqua29J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateAqua29J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateAqua29J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -2615,7 +2789,7 @@ public class FitnessLesson {
     }
     public void lessonReportAquacise29J(){
         int NoOfCustomer = Aquacise29thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateAqua29J);
         System.out.println(
                 "       LESSON TYPE: AQUACISE                 DATE: 29TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -2703,18 +2877,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateAqua5F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateAqua5F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateAqua5F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateAqua5F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateAqua5F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -2742,9 +2921,9 @@ public class FitnessLesson {
     }
     public void lessonReportAquacise5F(){
         int NoOfCustomer = Aquacise5thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateAqua5F);
         System.out.println(
-                "       LESSON TYPE: AQUACISE                 DATE: 5TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE             DATE: 5TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -2829,18 +3008,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateAqua12F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateAqua12F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateAqua12F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateAqua12F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateAqua12F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -2868,9 +3052,9 @@ public class FitnessLesson {
     }
     public void lessonReportAquacise12F(){
         int NoOfCustomer = Aquacise12thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateAqua12F);
         System.out.println(
-                "       LESSON TYPE: AQUACISE                 DATE: 12TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE              DATE: 12TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -2954,18 +3138,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateAqua19F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateAqua19F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateAqua19F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateAqua19F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateAqua19F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -2993,9 +3182,9 @@ public class FitnessLesson {
     }
     public void lessonReportAquacise19F(){
         int NoOfCustomer = Aquacise19thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateAqua19F);
         System.out.println(
-                "       LESSON TYPE: AQUACISE                 DATE: 19TH           SESSION: MORNING \n" +
+                "       LESSON TYPE: AQUACISE              DATE: 19TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3079,18 +3268,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateAqua26F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateAqua26F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateAqua26F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateAqua26F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateAqua26F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -3118,9 +3312,9 @@ public class FitnessLesson {
     }
     public void lessonReportAquacise26F(){
         int NoOfCustomer = Aquacise26thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateAqua26F);
         System.out.println(
-                "       LESSON TYPE: AQUACISE                 DATE: 26TH           SESSION: MORNING \n" +
+                        "       LESSON TYPE: AQUACISE             DATE: 26TH           SESSION: MORNING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3207,18 +3401,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateAqua8J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateAqua8J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateAqua8J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateAqua8J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateAqua8J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -3246,7 +3445,7 @@ public class FitnessLesson {
     }
     public void lessonReportZumba8J(){
         int NoOfCustomer = zumba8thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateZumb8J);
         System.out.println(
                 "       LESSON TYPE: ZUMBA                 DATE: 8TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -3333,18 +3532,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateZumb15J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateZumb15J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateZumb15J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateZumb15J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateZumb15J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -3372,7 +3576,7 @@ public class FitnessLesson {
     }
     public void lessonReportZumba15J(){
         int NoOfCustomer = zumba15thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateZumb15J);
         System.out.println(
                 "       LESSON TYPE: ZUMBA                 DATE: 15TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -3458,18 +3662,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateZumb22J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateZumb22J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateZumb22J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateZumb22J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateZumb22J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -3497,7 +3706,7 @@ public class FitnessLesson {
     }
     public void lessonReportZumba22J(){
         int NoOfCustomer = zumba22ndJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateZumb22J);
         System.out.println(
                 "       LESSON TYPE: ZUMBA                 DATE: 22TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -3583,18 +3792,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateZumb29J.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateZumb29J.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateZumb29J.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateZumb29J.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateZumb29J.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -3622,9 +3836,9 @@ public class FitnessLesson {
     }
     public void lessonReportZumba29J(){
         int NoOfCustomer = zumba29thJan.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateZumb29J);
         System.out.println(
-                "       LESSON TYPE: ZUMBA                 DATE: 29TH           SESSION: EVENING \n" +
+                "               LESSON TYPE: ZUMBA                 DATE: 29TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3711,18 +3925,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateZumb5F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateZumb5F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateZumb5F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateZumb5F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateZumb5F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -3750,9 +3969,9 @@ public class FitnessLesson {
     }
     public void lessonReportZumba5F(){
         int NoOfCustomer = zumba5thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateZumb5F);
         System.out.println(
-                "       LESSON TYPE: ZUMBA                 DATE: 5TH           SESSION: EVENING \n" +
+                        "       LESSON TYPE: ZUMBA                 DATE: 5TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
                         "    AVERAGE RATING: " + avRating + "\n" );
     }
@@ -3836,18 +4055,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateZumb12F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateZumb12F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateZumb12F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateZumb12F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateZumb12F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -3875,7 +4099,7 @@ public class FitnessLesson {
     }
     public void lessonReportZumba12F(){
         int NoOfCustomer = zumba12thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateZumb12F);
         System.out.println(
                 "       LESSON TYPE: ZUMBA                 DATE: 12TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -3961,18 +4185,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateZumb19F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateZumb19F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateZumb19F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateZumb19F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateZumb19F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -4000,7 +4229,7 @@ public class FitnessLesson {
     }
     public void lessonReportZumba19F(){
         int NoOfCustomer = zumba19thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateZumb19F);
         System.out.println(
                 "       LESSON TYPE: ZUMBA                 DATE: 19TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
@@ -4085,18 +4314,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateZumb26F.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateZumb26F.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateZumb26F.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateZumb26F.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateZumb26F.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -4124,7 +4358,7 @@ public class FitnessLesson {
     }
     public void lessonReportZumba26F(){
         int NoOfCustomer = zumba26thFeb.size();
-        String avRating = "Null";
+        double avRating = this.CalculateAveRating(this.rateZumb26F);
         System.out.println(
                 "       LESSON TYPE: ZUMBA                 DATE: 26TH           SESSION: EVENING \n" +
                         "NUMBER OF CUSTOMER: " + NoOfCustomer + "\n" +
