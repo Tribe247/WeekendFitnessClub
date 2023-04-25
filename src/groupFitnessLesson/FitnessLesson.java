@@ -1,5 +1,6 @@
 package groupFitnessLesson;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -13,12 +14,18 @@ public class FitnessLesson {
     private static FitnessLesson instance;
 
 
+
     public static synchronized FitnessLesson getInstance() {
         if (instance == null) {
             instance = new FitnessLesson();
         }
         return instance;
     }
+
+    // Declaring List for rating
+    ArrayList<Integer> rateYoga;
+
+
 
     Scanner ftScanner = new Scanner(System.in);
 
@@ -64,6 +71,12 @@ public class FitnessLesson {
         this.zumba12thFeb = new HashMap<>();
         this.zumba19thFeb = new HashMap<>();
         this.zumba26thFeb = new HashMap<>();
+
+
+        //Assigning to rating
+        rateYoga = new ArrayList<Integer>();
+
+
     }
 
 
@@ -81,10 +94,6 @@ public class FitnessLesson {
                 System.out.println("Please always keep your lesson details, It may be rquired for  \n" +
                         "other activities on the portal \n");
 
-                // Remove the comment to confirm all session are booked
-                //for (String i : yoga7thJan.keySet()) {
-                    //System.out.println("Key: " + i + ", Value: " + yoga7thJan.get(i));
-                //}
             }
         }
         else if (yoga7thJan.size() == 5)  {
@@ -124,6 +133,14 @@ public class FitnessLesson {
             // Method to menu
         }
     }
+    public double yogaAveRating() {
+        double sum = 0;
+        for (int average : rateYoga) {
+            sum += average;
+        }
+        double average = sum / rateYoga.size();
+        return average;
+    }
     public void rateYoga7thJ(String lastName){
         if (yoga7thJan.containsKey(lastName)) {
             System.out.println("Record found for: " + lastName +
@@ -137,18 +154,23 @@ public class FitnessLesson {
             int rating = ftScanner.nextInt();
 
             if (rating == 1) {
+                rateYoga.add(rating);
                 System.out.println("Customer is Very dissatisfied" +
                                    "\n We hope to serve you better");
             } else if (rating == 2) {
+                rateYoga.add(rating);
                 System.out.println("Customer is dissatisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 3) {
+                rateYoga.add(rating);
                 System.out.println("Customer is OK" +
                         "\n We hope to serve you better");
             } else if (rating == 4) {
+                rateYoga.add(rating);
                 System.out.println("Customer is Satisfied" +
                         "\n We hope to serve you better");
             } else if (rating == 5) {
+                rateYoga.add(rating);
                 System.out.println("Customer is Very Satisfied" +
                         "\n We hope to serve you better");
             } else {
@@ -1468,10 +1490,6 @@ public class FitnessLesson {
                         "   PRICE OF LESSON: " + price +
                         "      TOTAL INCOME: " + totalIncome + "\n");
     }
-
-
-
-
 
 
     private HashMap<String, String> Spin28thJan;
